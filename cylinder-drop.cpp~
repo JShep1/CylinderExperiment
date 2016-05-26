@@ -24,7 +24,7 @@ void post_step_callback(Simulator* sim)
 {
   cylinder->get_generalized_coordinates_euler(coords);
   // output the sliding velocity at the contact 
-  std::ofstream out("CylinderData100.txt", std::ostream::app);
+  std::ofstream out("CylinderData10.txt", std::ostream::app);
   out << coords[0] << " " <<coords[1] << " " <<coords[2] <<" " <<coords[3]<<" " <<coords[4]<<" " <<coords[5] << " " <<sim->current_time<<std::endl;
   out.close();
 }
@@ -35,7 +35,7 @@ extern "C" {
 void init(void* separator, const std::map<std::string, Moby::BasePtr>& read_map, double time)
 {
   // wipe out existing file 
-  std::ofstream out("CylinderData100.txt");
+  std::ofstream out("CylinderData10.txt");
   out.close();
 
 
