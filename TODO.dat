@@ -1,0 +1,5 @@
+--Lowest radius for height=20 at s=0.001 was 0.5
+--Lowest radius for height=20 at s=0.01 was 0.29
+--Need to gather data for various timesteps and initial configs
+--Find timestep where the simulation runs successfully for r = 0.005 and h = 20
+
