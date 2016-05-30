@@ -1,8 +1,6 @@
 #!/bin/bash
-cd build/
+cd build1/
 make clean all
 cd ..
-moby-driver -r -p=./build/libcylinder-drop.so -mt=3 -s=$1 cylinder.xml
-cp CylinderData01.txt CylinderData100.txt
-rm CylinderData01.txt
-mv CylinderData100.txt Success/$2
+moby-driver -r -p=./build1/libcylinder-drop.so -mt=3 -s=$1 cylinder.xml
+mv CylinderDataControl.txt EnergyData/$2

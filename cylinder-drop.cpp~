@@ -25,7 +25,7 @@ void post_step_callback(Simulator* sim)
   cylinder->get_generalized_coordinates_euler(coords);
   // output the sliding velocity at the contact 
   std::ofstream out("CylinderDataControl.txt", std::ostream::app);
-  out << sim->current_time << " " << cylinder->calc_kinetic_energy() << std::endl;
+  out << sim->current_time << " " << box->calc_kinetic_energy() << std::endl;
   out.close();
 }
 
