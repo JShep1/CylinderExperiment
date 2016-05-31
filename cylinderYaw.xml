@@ -1,7 +1,7 @@
 <!-- A cylinder undergoing sustained contact with the ground by rolling along.  -->
 
 <XML>
-  <DRIVER step-size="0.001">
+  <DRIVER step-size="0.1">
     <camera position="50 10 50" target="0 -10 0" up="0 1 0" />
     <window location="0 0" size="640 480" />
   </DRIVER>
@@ -29,7 +29,7 @@
       </RigidBody>
 
     <!-- Setup the simulator -->
-    <TimeSteppingSimulator id="simulator" min-step-size="0.001">
+    <TimeSteppingSimulator id="simulator" min-step-size="0.1">
       <DynamicBody dynamic-body-id="cylinder" />
       <DynamicBody dynamic-body-id="ground" />
       <RecurrentForce recurrent-force-id="gravity"  />
